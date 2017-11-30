@@ -5,18 +5,18 @@
  * @Todo:TODO
  */
 package com.pxh.reflex;
- /**
-  * FileName: Student.java
-  * package com.pxh.reflex
-  *Type Student
-  * git 
-  * Author:   Peng Xuehui
-  * Date:     2017年11月30日 下午2:06:10
-  * Description: reflex test class
-  * History:
-  * <author>          <time>          <version>          <desc>
-  * 作者姓名           修改时间           版本号              描述
-  */
+
+/**
+ * 
+* <b>Description:学生测试实体类</b><br> 
+* <b>@userName:Peng Xuehui<b><br>
+* @version 1.0
+* @Note
+* <b>ProjectName:</b> java_base
+* <br><b>PackageName:</b> com.pxh.reflex
+* <br><b>ClassName:</b> Student
+* <br><b>Date:</b> 2017年11月30日 下午9:28:41
+ */
 public class Student {
 	private int id; 
 	private String name;
@@ -31,22 +31,27 @@ public class Student {
 	private static int id3;
 	@SuppressWarnings("unused")
 	private static String name3;
+	
 	/**
-	 *
-	 * @Time:2017年11月30日 下午2:52:49
-	 * @Username:Peng xh
-	 * @Todo: Non parametric construction
+	 * 
+	* <b>Description:Non parameters construct</b><br> 
+	* @Note
+	* <b>userName:Peng Xuehui</b><br>
+	* <br><b>Date:</b> 2017年11月30日 下午9:29:50
+	* <br><b>Version:</b> 1.0
 	 */
 	public Student() {}
 
 	
 
 	/**
-	 *
-	 * @Time:2017年11月30日 下午3:01:47
-	 * @Username:Peng xh
-	 * @Todo:One parameters construct
-	 * @param id
+	 * 
+	* <b>Description:One parameters construct</b><br> 
+	* @param id
+	* @Note
+	* <b>userName:Peng Xuehui</b><br>
+	* <br><b>Date:</b> 2017年11月30日 下午9:30:16
+	* <br><b>Version:</b> 1.0
 	 */
 	@SuppressWarnings("unused")
 	private Student(int id) {
@@ -56,29 +61,21 @@ public class Student {
 
 
 	/**
-	 *
-	 * @Time:2017年11月30日 下午2:52:23
-	 * @Username:Peng xh
-	 * @Todo:Tow parameters construction
-	 * @param id 
-	 * @param name
+	 * 
+	* <b>Description:Tow parameters construction</b><br> 
+	* @param id
+	* @param name
+	* @Note
+	* <b>userName:Peng Xuehui</b><br>
+	* <br><b>Date:</b> 2017年11月30日 下午9:30:30
+	* <br><b>Version:</b> 1.0
 	 */
 	public Student(int id, String name) {
 		this.id = id;
 		this.name = name;
 	}
 
-	/**
-	 * 
-	  * @Time:2017年11月30日 下午3:04:45
-	  * @Author:Peng Xh
-	  * @Description: test1
-	  * @git 
-	  * @Return void
-	  * History:
-	  * <author>          <time>          <version>          <desc>
-	  * 作者姓名           修改时间           版本号              描述
-	 */
+	
 	public void test1(){
 		System.out.println("");
 	}

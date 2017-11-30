@@ -4,24 +4,26 @@ import java.lang.reflect.Field;
 
 
 /**
-  * FileName: Main.java
-  * package com.pxh.reflex
-  *Type Main
-  * git 
-  * Author:   Peng Xuehui
-  * Date:     2017年11月30日 下午3:10:10
-  * Description: Program main entrance
-  * History:
-  * <author>          <time>          <version>          <desc>
-  * 作者姓名           修改时间           版本号              描述
-  */
+ * 
+* <b>Description:程序入口</b><br> 
+* <b>@userName:Peng Xuehui<b><br>
+* @version 1.0
+* @Note
+* <b>ProjectName:</b> java_base
+* <br><b>PackageName:</b> com.pxh.reflex
+* <br><b>ClassName:</b> Main
+* <br><b>Date:</b> 2017年11月30日 下午9:25:56
+ */
 public class Main {
 
 	/**
-	 *
-	 * @Time:2017年11月30日 下午3:14:00
-	 * @Username:Peng xh
-	 * @Todo:Program main entrance 
+	 * 
+	* <b>Description:主方法</b><br> 
+	* @param args
+	* @Note
+	* <b>userName:Peng Xuehui</b><br>
+	* <br><b>Date:</b> 2017年11月30日 下午9:28:02
+	* <br><b>Version:</b> 1.0
 	 */
 	@SuppressWarnings({ "unchecked", "rawtypes" })
 	public static void main(String[] args) {
@@ -88,7 +90,8 @@ public class Main {
 				}
 				System.out.print(field.getType()+"---"+field.getName()+" ");
 			}
-			//对变量复制
+			//对类成员赋值
+			
 		
 			
 			

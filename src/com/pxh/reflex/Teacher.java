@@ -1,16 +1,16 @@
 package com.pxh.reflex;
- /**
-  * FileName: Teacher.java
-  * package com.pxh.reflex
-  *Type Teacher
-  * git 
-  * Author:   Peng Xuehui
-  * Date:     2017年11月30日 下午3:23:25
-  * Description: reflex test class
-  * History:
-  * <author>          <time>          <version>          <desc>
-  * 作者姓名           修改时间           版本号              描述
-  */
+
+/**
+ * 
+* <b>Description:教师测试实体类</b><br> 
+* <b>@userName:Peng Xuehui<b><br>
+* @version 1.0
+* @Note
+* <b>ProjectName:</b> java_base
+* <br><b>PackageName:</b> com.pxh.reflex
+* <br><b>ClassName:</b> Teacher
+* <br><b>Date:</b> 2017年11月30日 下午9:30:54
+ */
 public class Teacher {
 	
 	/**
