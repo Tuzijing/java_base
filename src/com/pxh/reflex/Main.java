@@ -1,6 +1,8 @@
 package com.pxh.reflex;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
+import java.lang.reflect.Method;
+import java.lang.reflect.Modifier;
 
 
 /**
@@ -88,13 +90,37 @@ public class Main {
 				if(field.getType() == int.class){
 					System.out.println("我是int   "+field.getName());
 				}
-				System.out.print(field.getType()+"---"+field.getName()+" ");
+				System.out.println(Modifier.toString(field.getModifiers())+"------"+field.getType()+"---"+field.getName()+" ");
 			}
-			//对类成员赋值
-			
-		
-			
-			
+			//对类私有成员赋值
+			System.out.println("对私有的成员赋值:");
+			fields[0].set(student,1111);
+			System.out.println(fields[0].get(student));
+			//获取指定成员
+			Field field = clz.getField("id2");
+			System.out.println("我是指定的成员:"+field.getName());
+			//=============操作方法===============
+			//获取所有公共的方法
+			System.out.println("获取所有公共方法");
+			Method[] methods = clz.getMethods();
+			for(Method method:methods){
+				System.out.println(Modifier.toString(method.getModifiers())+"--"+method.getName());
+			}
+			//获取所有方法（包括私有）
+			Method[] methods2 = clz.getDeclaredMethods();
+			System.out.println("获取所有方法（包括私有）");
+			for(Method method:methods2){
+				System.out.println(Modifier.toString(method.getModifiers())+"--"+method.getName());
+			}
+			//获取指定的方法
+			System.out.println("获取指定的方法:");
+			Method method = clz.getMethod("test1");
+			/**
+			 * 如果方法有返回值 则得到的是返回值
+			 * 如果没有执行结果为空  可以这样执行一遍  method.invoke(student);
+			 */
+			Object result = method.invoke(student);
+			System.out.println(result);
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
