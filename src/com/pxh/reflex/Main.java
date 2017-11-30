@@ -80,9 +80,16 @@ public class Main {
 				System.out.print(field.getType()+"---"+field.getName()+" ");
 			}
 			//获取所有类型成员
-			
-			
-			
+			System.out.println("获取所有类成员");
+			Field[] fields2 = clz.getDeclaredFields();
+			for(Field field:fields2){
+				if(field.getType() == int.class){
+					System.out.println("我是int   "+field.getName());
+				}
+				System.out.print(field.getType()+"---"+field.getName()+" ");
+			}
+			//对变量复制
+		
 			
 			
 		} catch (Exception e) {
