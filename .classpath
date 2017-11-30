@@ -2,5 +2,7 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="lib" path="jar/email/javax.mail.jar" sourcepath="jar/email/javamail-JAVAMAIL-1_6_0"/>
+	<classpathentry kind="lib" path="jar/email/jaf-1_1_1/jaf-1.1.1/activation.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
