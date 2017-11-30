@@ -25,7 +25,6 @@ public class CustomException extends Exception {
 
 	@Override
 	public String getMessage() {
-		
 		return "异常编号:"+this.exceptionNum+",异常信息:"+this.message;
 	}
 	
