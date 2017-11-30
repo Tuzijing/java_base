@@ -49,7 +49,8 @@ public class EmailMain {
 		Properties properties = System.getProperties();
 		//设置邮件服务器  
 		properties.setProperty("mail.smtp.host", host);
-		properties.put("mail.smtp.host", "true");
+		properties.setProperty("mail.smtp.port", "465");
+		properties.put("mail.smtp.auth", "true");
 		MailSSLSocketFactory sf = new MailSSLSocketFactory();
         sf.setTrustAllHosts(true);
         properties.put("mail.smtp.ssl.enable", "true");
