@@ -11,5 +11,8 @@ package com.pxh.thread.pool;
 * <br><b>Date:</b> 2017年12月1日 下午5:38:35
  */
 public class NewCachedThreadPoolDemo {
-
+	
+	public static void main(String[] args) {
+		
+	}
 }
