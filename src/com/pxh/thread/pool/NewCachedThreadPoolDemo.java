@@ -1,7 +1,10 @@
 package com.pxh.thread.pool;
+
+import java.util.concurrent.Executors;
+
 /**
  * 
-* <b>Description:</b><br> 
+* <b>Description:newCacheThread Demo</b><br> 
 * <b>@userName:Peng Xuehui<b><br>
 * @version 1.0
 * @Note
@@ -13,6 +16,7 @@ package com.pxh.thread.pool;
 public class NewCachedThreadPoolDemo {
 	
 	public static void main(String[] args) {
-		
+		System.out.println( System.getSecurityManager());
+		System.out.println( Thread.currentThread().getThreadGroup());
 	}
 }
